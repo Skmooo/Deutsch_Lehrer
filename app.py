@@ -13,7 +13,7 @@ genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # Use the most basic model name possible
 try:
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-pro')
     
     if "messages" not in st.session_state:
         st.session_state.messages = []
