@@ -61,8 +61,7 @@ The user can trigger these by typing the number or name:
 
 """
 
-model = genai.GenerativeModel('gemini-1.5-pro', system_instruction=instruction)
-
+model = genai.GenerativeModel('gemini-1.5-flash', system_instruction=instruction)
 # Chat logic
 if "messages" not in st.session_state:
     st.session_state.messages = []
